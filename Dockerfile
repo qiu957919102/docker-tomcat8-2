@@ -1,4 +1,4 @@
-FROM enschede/linux-core
+FROM enschede/linux-core-jdk7
 
 ADD apache-tomcat-8.0.18.zip /opt/apache-tomcat-8.0.18.zip
 
