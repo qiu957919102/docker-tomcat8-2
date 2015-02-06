@@ -1,8 +1,7 @@
 FROM enschede/linux-core-jdk7
 
-ADD apache-tomcat-8.0.18.zip /opt/apache-tomcat-8.0.18.zip
-
 RUN cd /opt && \
+    wget http://mirrors.koehn.com/apache/tomcat/tomcat-8/v8.0.18/bin/apache-tomcat-8.0.18.zip && \
     unzip apache-tomcat-8.0.18.zip && \
     rm apache-tomcat-8.0.18.zip && \
     chmod a+x apache-tomcat-8.0.18/bin/*.sh
